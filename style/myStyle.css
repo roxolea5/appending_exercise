@@ -1,0 +1,25 @@
+body{
+	background-color: #b8c8ec;
+}
+
+.commentDiv{
+    background-color:  #5457f5;
+    height: 50px;
+}
+
+
+
+.modal-header{
+	background-color: #3f3f3f;
+	color: #fff;
+}
+
+h2{
+	color: #888329;
+	margin-left: 10px;
+}
+
+p{
+	font-weight: bold;
+	margin-left: 10px;
+}

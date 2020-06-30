@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML & JS</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style/myStyle.css">
+
+</head>
+
+<body>
+
+    <div class="d-flex flex-column text-center commentDiv sticky-top">
+        <h1>Comments</h1>
+    </div>
+
+    <div class="d-flex flex-column align-items-start" id="all-coments-div">
+        <button type="button" class="mt-3 btn btn-primary align-self-center" id="addCommentButton" data-toggle="modal"
+            data-target="#newCommentModal">Add comment</button>
+        <div>
+            <h2>Dany "La Jaiba" Azamar</h2>
+
+            <p>
+                Jaibas and Papantla's flyers for the people.
+            </p>
+        </div>
+        <div>
+            <h2>Paquito</h2>
+            <p>
+                I'm not Batman but I'm trying.
+            </p>
+        </div>
+    </div>
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="newCommentModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">New comment</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="d-flex flex-column flex-fill align-items-center">
+                        <div id="comment-input">
+                            <input class="rounded" type="text" name="author-name" id="author-name"
+                                placeholder="Author name">
+                            <br>
+                            <input class="mt-3 rounded" type="text" name="new-comment" id="new-comment"
+                                placeholder="Comment">
+                        </div>
+                        <div>
+                            <button type="button" class="mt-3 btn btn-secondary" id="saveCommentButton"
+                                onclick="saveComment()">Save</button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="scripts/script.js"></script>
+</body>
+
+
+</html>
